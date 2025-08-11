@@ -17,7 +17,7 @@ class LocationController extends AbstractController
      */
     public function importLocations(EntityManagerInterface $em): Response
     {
-        $filePath = "E:/log-monitoring-tool/PSGC-2Q-2025-Publication-Datafile.csv";
+        $filePath = "D:\Github\LocationExtractor\PSGC-2Q-2025-Publication-Datafile.csv";
         if (!file_exists($filePath)) {
             return new Response("File not found.");
         }
